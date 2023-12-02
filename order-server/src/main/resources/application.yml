@@ -1,0 +1,10 @@
+#订单的微服务
+server:
+  port: 9820
+  servlet:
+    context-path: /order
+spring:
+  application:
+    name: order-server
+  profiles:
+    active: dev

@@ -1,0 +1,10 @@
+#物流的微服务
+server:
+  port: 9830
+  servlet:
+    context-path: /logistics
+spring:
+  application:
+    name: logistics-server
+  profiles:
+    active: dev

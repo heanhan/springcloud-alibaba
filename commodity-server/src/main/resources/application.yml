@@ -1,0 +1,10 @@
+#商品的微服务
+server:
+  port: 9840
+  servlet:
+    context-path: /commodity
+spring:
+  application:
+    name: commodity-server
+  profiles:
+    active: dev

@@ -1,0 +1,10 @@
+#用户中心
+server:
+  port: 9810
+  servlet:
+    context-path: /user
+spring:
+  application:
+    name: user-server
+  profiles:
+    active: dev
