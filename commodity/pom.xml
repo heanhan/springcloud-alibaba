@@ -6,10 +6,10 @@
     <parent>
         <groupId>com.zjh</groupId>
         <artifactId>springcloud-alibaba</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
 
-    <artifactId>commodity-server</artifactId>
+    <artifactId>commodity</artifactId>
     <description>商品模块</description>
 
     <properties>

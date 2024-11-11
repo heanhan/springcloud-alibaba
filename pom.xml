@@ -5,16 +5,16 @@
 
     <groupId>com.zjh</groupId>
     <artifactId>springcloud-alibaba</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>springcloud-alibaba</name>
     <description>springcloud-alibaba 基于jdk21</description>
 
     <properties>
         <java.version>21</java.version>
-        <boot-version>3.2.0</boot-version>
-        <spring-cloud-version>2022.0.0</spring-cloud-version>
-        <alibaba-version>2022.0.0.0</alibaba-version>
+        <boot-version>3.2.4</boot-version>
+        <spring-cloud-version>2023.0.3</spring-cloud-version>
+        <alibaba-version>2023.0.1.2</alibaba-version>
     </properties>
     <!--设置为pom 项目的总依赖-->
     <packaging>pom</packaging>
@@ -22,11 +22,11 @@
     <!--项目的所有模块-->
     <modules>
         <module>commons</module>
-        <module>user-server</module>
-        <module>getway-server</module>
-        <module>commodity-server</module>
-        <module>order-server</module>
-        <module>logistics-server</module>
+        <module>gateway-service</module>
+        <module>user</module>
+        <module>commodity</module>
+        <module>order</module>
+        <module>logistics</module>
     </modules>
 
     <!--项目宿友模块都要依赖的jar-->

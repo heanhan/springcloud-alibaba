@@ -6,12 +6,12 @@
     <parent>
         <groupId>com.zjh</groupId>
         <artifactId>springcloud-alibaba</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
 
-    <artifactId>user-server</artifactId>
+    <artifactId>logistics</artifactId>
 
-    <description>用户中心</description>
+    <description>物流模块</description>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -20,6 +20,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.zjh</groupId>
+            <artifactId>commons</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -37,6 +42,5 @@
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
     </dependencies>
-
 
 </project>

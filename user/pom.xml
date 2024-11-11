@@ -6,10 +6,12 @@
     <parent>
         <groupId>com.zjh</groupId>
         <artifactId>springcloud-alibaba</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
 
-    <artifactId>getway-server</artifactId>
+    <artifactId>user</artifactId>
+
+    <description>用户中心</description>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -18,12 +20,23 @@
     </properties>
 
     <dependencies>
-        <!--引入 gateway网关的依赖-->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <!--移除tomcat web容器使用undertow-->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
     </dependencies>
+
 
 </project>
