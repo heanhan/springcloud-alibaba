@@ -21,53 +21,5 @@
     </dependencies>
 
 
-    <build>
-
-        <finalName>commons-${version}</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-
-        <resources>
-            <resource>
-                <!-- 指定文件路径 -->
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-                <includes>
-                    <!-- **表示任意级目录，*表示任意文件 -->
-                    <include>**/*</include>
-                </includes>
-            </resource>
-        </resources>
-    </build>
-    <!--    &lt;!&ndash;统一环境&ndash;&gt;-->
-    <!--    <profiles>-->
-    <!--        <profile>-->
-    <!--            <id>prod</id>-->
-    <!--            <properties>-->
-    <!--                <profiles.active>prod</profiles.active>-->
-    <!--            </properties>-->
-    <!--            <activation>-->
-    <!--                <activeByDefault>true</activeByDefault>-->
-    <!--            </activation>-->
-    <!--        </profile>-->
-    <!--        <profile>-->
-    <!--            <id>dev</id>-->
-    <!--            <properties>-->
-    <!--                <profiles.active>dev</profiles.active>-->
-    <!--            </properties>-->
-    <!--        </profile>-->
-    <!--    </profiles>-->
 
 </project>
